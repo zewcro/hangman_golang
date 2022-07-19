@@ -27,7 +27,7 @@ func drawTurns(l int) {
 	switch l {
 	case 0:
 		draw = `
-		________
+		__________
 		|	  	  | 
 		|	  	  o
 		|		 /|\
@@ -42,7 +42,7 @@ func drawTurns(l int) {
 
 	case 1:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  o
 	|		 /|\
@@ -56,7 +56,7 @@ func drawTurns(l int) {
 `
 	case 2:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  o
 	|		 /|\
@@ -71,7 +71,7 @@ func drawTurns(l int) {
 `
 	case 3:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  o
 	|		 /|\
@@ -86,7 +86,7 @@ func drawTurns(l int) {
 `
 	case 4:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  o
 	|		 /|
@@ -100,7 +100,7 @@ func drawTurns(l int) {
 
 	case 5:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  o
 	|		  |
@@ -114,7 +114,7 @@ func drawTurns(l int) {
 
 	case 6:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  o
 	|		  
@@ -128,7 +128,7 @@ func drawTurns(l int) {
 
 	case 7:
 		draw = `
-	________
+	__________
 	|	  	  | 
 	|	  	  
 	|		  
@@ -159,7 +159,7 @@ func drawState(g *Game, guess string) {
 	case "goodGuess":
 		fmt.Print("Good guess!")
 	case "alreadyGuessed":
-		fmt.Printf("Letter ' %s ' was already used", guess)
+		fmt.Printf("Letter ' %s ' was already used\n", guess)
 	case "badGuess":
 		fmt.Printf("Bad Guess, '%s' is not in the word", guess)
 	case "lost":
